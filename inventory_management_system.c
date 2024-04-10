@@ -50,7 +50,7 @@ void displayTransactionHistory();
 
 int main()
 {
-    int choice;
+    int choice,t;
     do
     {
         // Display menu options
@@ -144,11 +144,12 @@ int main()
             break;
         case 'q':
             printf("=== exitting ===\n");
+            t=5;
             break;
         default:
             printf("Invalid choice\n");
         }
-    } while (choice = 'q');
+    } while (t!=5);
     return 0;
 }
 
